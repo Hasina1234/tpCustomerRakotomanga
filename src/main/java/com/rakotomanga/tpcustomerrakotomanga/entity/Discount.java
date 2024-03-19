@@ -22,7 +22,8 @@ import java.math.BigDecimal;
 import java.util.Collection;
 
 /**
- *
+ * Cette classe représente l'entité Discount
+ * Cette classe est annotée avec les informations nécessaires pour la persistance en base de données
  * @author Hasina
  */
 @Entity

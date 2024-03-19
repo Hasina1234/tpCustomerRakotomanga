@@ -21,7 +21,8 @@ import java.io.Serializable;
 import java.util.Collection;
 
 /**
- *
+ * Cette classe représente l'entité MicroMarket
+ * Cette classe est annotée avec les informations nécessaires pour la persistance en base de données
  * @author Hasina
  */
 @Entity
