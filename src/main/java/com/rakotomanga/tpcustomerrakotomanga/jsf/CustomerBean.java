@@ -38,5 +38,7 @@ public class CustomerBean implements Serializable {
       }
       return customerList;
     }  
+    
+    
 
 }
