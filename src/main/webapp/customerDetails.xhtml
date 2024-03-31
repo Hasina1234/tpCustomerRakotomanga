@@ -13,7 +13,7 @@
     </h:head>
     <h:body>
         <f:view>
-            <h:form>
+            <h:form rendered='#{customerDetailsBean.customer != null}'>
                 <h1><h:outputText value="Create/Edit"/></h1>
                 <h:panelGrid columns="2">
                     <h:outputLabel value="CustomerId:" for="customerId" />
@@ -49,10 +49,12 @@
 
                 </h:panelGrid>
 
-                <h:button id="back" value="Revenir à la liste" outcome="CustomerList"/>
+                
                 <h:commandButton id="update" value="Enregistrer" action="#{customerDetailsBean.update}"/>
                 <h:messages/>
             </h:form>
+            <h:outputText value="Aucun client avec l'id #{customerDetailsBean.idCustomer} !" rendered='#{customerDetailsBean.customer == null}'/>
+            <h:button id="back" value="Revenir à la liste" outcome="CustomerList"/>
         </f:view>
 
     </h:body>
